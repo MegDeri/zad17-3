@@ -5,6 +5,7 @@ process.stdin.on('readable', function() {
     var input = process.stdin.read();
     if (input !== null) {
       var instruction = input.toString().trim();
+      return;
     }
     switch(instruction) {
       case '':
