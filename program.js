@@ -9,7 +9,6 @@ process.stdin.on("readable", function() {
   switch (instruction) {
     case "":
       process.stdout.write("You did not write anything! Try again\n");
-      process.exit();
       break;
     case "/exit":
       process.stdout.write("Quitting app!\n");
